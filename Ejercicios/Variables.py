@@ -77,6 +77,37 @@ print("Cadena repetida: ", cadena1*3)
 Nombre="pepe"
 print("Hola " + Nombre)
 
+#funcion str() convierte a string variables de otros tipos
+edad = 25
+print("Tengo " + str(edad) + " años")
+
+#metodo format() para formatear cadenas de texto
+nombre = "Ana"  
+edad = 28
+altura = 1.70
+print("Me llamo {}, tengo {} años y mido {} metros.".format(nombre, edad, altura))
+#funcion len() para conocer la longitud de una cadena de texto
+longitud_cadena = len(cadena_concatenada)
+print("Longitud de la cadena concatenada:", longitud_cadena)
+
+#acceder a caracteres individuales de una cadena
+primer_caracter = cadena1[0] #indexacion empieza en 0
+print("Primer caracter de cadena1:", primer_caracter)   
+ultimo_caracter = cadena1[-1] #indexacion negativa empieza en -1 empezando desde el final
+print("Ultimo caracter de cadena1:", ultimo_caracter)
+
+#metodos para trabajar con cadenas de texto
+cadena_mayusculas = cadena1.upper() #convierte a mayusculas
+print("Cadena en mayusculas:", cadena_mayusculas)
+cadena_minusculas = cadena2.lower() #convierte a minusculas
+print("Cadena en minusculas:", cadena_minusculas)   
+cadena_capitalizada = cadena1.capitalize() #primera letra en mayuscula
+print("Cadena capitalizada:", cadena_capitalizada)
+cadena_titulo = cadena2.title() #primera letra de cada palabra en mayuscula
+print("Cadena en formato titulo:", cadena_titulo)
+cadena_reemplazada = cadena_concatenada.replace("Hola", "Adios") #reemplaza una subcadena por otra
+print("Cadena con reemplazo:", cadena_reemplazada)
+
 
 #tipos de datos numericos
 numero_entero = 10 #int
@@ -86,6 +117,72 @@ numero_complejo = 2 + 3j #complex
 print("Tipo de dato entero:", type(numero_entero))
 print("Tipo de dato decimal:", type(numero_decimal))
 print("Tipo de dato complejo:", type(numero_complejo))
+
+#variables booleanas y operaciones logicas
+
+#booleanos pueden ser True o False
+es_mayor = numero_entero > 5 #True
+es_menor = numero_entero < 5 #False
+#operadores logicos: and, or, not
+A=True
+B=False
+print(not A) #False
+#operador and
+print(A and B) #False
+#operador or
+print(A or B) #True
+#operadores de comparacion: ==, !=, >, <, >=, <=
+#multiples comparaciones simultaneas
+edad = 20
+print(edad>=16) and (edad <=40)
+
+#operadores de decision 
+
+#condicionales if, elif, else
+if edad < 18:
+    print("Eres menor de edad") 
+elif edad >= 18 and edad < 65:
+    print("Eres mayor de edad")
+elif edad >= 65:
+    print("Eres un adulto mayor")
+else:
+    print("Edad no válida")
+
+#operadores anidados
+if edad < 18:
+    print("Eres menor de edad") 
+    if name.startswith("A") or name.startswith("a"):
+        print( "eres mauor de edad pues tienes {} años y tu nombre, que es {}, empieza por A".format(edad, name))
+    else:
+        print("eres mayor de edad pues tienes {} años".format(edad))
+else:
+    print("eres muy joven")
+
+#operadores de iteracion 
+#bucle while mientras la condicion sea verdadera el bucle se ejecuta
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    contador += 1  # Incrementa el contador en 1
+#debemos tener cuidado con los bucles infinitos, si la condicion nunca se vuelve falsa el bucle se ejecutara indefinidamente
+#comando break para salir del bucle
+contador = 0
+while True:  # Bucle infinito
+    print("Contador:", contador)
+    contador += 1
+    if contador >= 5:
+        break  # Sale del bucle cuando contador es mayor o igual a 5
+#combinacion de bucle while...else
+i = 10
+print("preparados para la cuenta regresiva")
+while i > 0:
+    print(i)
+    i -= 1
+else:
+    print("¡Despegue!")
+#bucle for para iterar sobre una secuencia (lista, tupla, cadena de texto, etc.)
+for i in range(5):  # Itera desde 0 hasta 4 
+    print("Iteración:", i)
 
 
 
