@@ -150,6 +150,7 @@ else:
     print("Edad no válida")
 
 #operadores anidados
+name="andres"
 if edad < 18:
     print("Eres menor de edad") 
     if name.startswith("A") or name.startswith("a"):
@@ -184,6 +185,22 @@ else:
 #bucle for para iterar sobre una secuencia (lista, tupla, cadena de texto, etc.)
 for i in range(5):  # Itera desde 0 hasta 4 
     print("Iteración:", i)
+
+#funciones
+#definicion de funciones con def
+
+#funcion sin valor de retorno
+def saludar(nombre):
+    print("Hola, " + nombre + "!") #cuerpo de la funcion
+
+saludar("Andres") #llamada a la funcion
+
+
+#funcion con valor de retorno
+def sumar(a, b):
+    return a + b  # Devuelve la suma de a y b
+resultado = sumar(3, 5)  # Llama a la función y almacena el resultado
+print("Resultado de la suma:", resultado)
 
 
 
