@@ -15,9 +15,10 @@
 
 # Ejercicio 1: Crea una variable que contenga tu nombre
 
-tuNombre = "Andres"
+tuNombre = "Andres" #declaracion de variable tipo string
+
 # Ejercicio 2: Crea una variable que contenga tu edad
-edad = 30
+edad = 30 #declaracion de variable tipo int
 # Ejercicio 3: Crea una variable que contenga tu altura en metros
 altura = 1.63
 # Ejercicio 4: Crea una variable que contenga si eres estudiante (True o False)
@@ -32,10 +33,10 @@ from math import pi #importar solo pi de math
 from math import pi as valorpi #importar pi y renombrarlo como valorpi
 
 valorpi = mt.pi
-print(valorpi*2) #imprime el valor de pi por 2
+print(valorpi) #imprime el valor de pi
 
 #declaracion de multiples variables
-numeroint, numeroflot, cadenaString = 5, 3.2, "Hola"
+numeroint, numeroflot, cadenaString = 5, 3.2, "Hola Mundo"
 print(numeroint, numeroflot, cadenaString)
 
 #intercambio de valores entre variables
@@ -52,7 +53,7 @@ division = numeroint / numeroflot
 exponente = numeroint ** 2
 modulo = numeroint % 3
 division_entera = numeroint // 3
-print("suma:", suma, "resta:", resta, "multiplicacion:", multiplicacion, "division:", division, "exponente:", exponente, "modulo:", modulo, "division_entera:", division_entera)
+print('suma:', suma, "resta:", resta, "multiplicacion:", multiplicacion, "division:", division, "exponente:", exponente, "modulo:", modulo, "division_entera:", division_entera)
 
 #variable de tipo string
 string1 = "esto es un string" #comillas dobles
