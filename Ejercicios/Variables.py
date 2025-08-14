@@ -137,6 +137,86 @@ print(A or B) #True
 edad = 20
 print(edad>=16) and (edad <=40)
 
+#SEGUNDA CLASE 
+
+#listas, tuplas y diccionarios
+
+#listas son colecciones ordenadas y mutables
+lista_frutas = ["manzana", "banana", "naranja"]  # Lista de frutas
+print("Lista de frutas:", lista_frutas)
+
+# Acceder a elementos de la lista
+print("Primera fruta:", lista_frutas[0])  # Accede al primer elemento
+print("Ultima fruta:", lista_frutas[-1])  # Accede al último elemento
+#consulta todos los elementos de la lista
+for fruta in lista_frutas:
+    print("Fruta:", fruta)  # Imprime cada fruta en la lista
+
+# Modificar un elemento de la lista
+lista_frutas[1] = "kiwi"  # Cambia "banana" por "kiwi"
+print("Lista de frutas modificada:", lista_frutas)
+
+# Añadir un elemento a la lista
+lista_frutas.append("uva")  # Añade "uva" al final de la lista
+print("Lista de frutas después de añadir uva:", lista_frutas)
+
+# Eliminar un elemento de la lista
+lista_frutas.remove("naranja")  # Elimina "naranja" de la lista
+print("Lista de frutas después de eliminar naranja:", lista_frutas)
+del lista_frutas[1]  # Elimina un elemento por indice
+print("Lista de frutas después de eliminar el segundo elemento:", lista_frutas)
+lista_frutas.insert(1, "pera")  # Inserta "pera" en la posición 1
+print("Lista de frutas después de insertar pera:", lista_frutas)
+lista_frutas.pop()  # Elimina el último elemento de la lista
+print("Lista de frutas después de eliminar el último elemento:", lista_frutas)
+lista_frutas.clear()  # Elimina todos los elementos de la lista
+print("Lista de frutas después de limpiar:", lista_frutas)
+
+
+
+#tuplas son colecciones ordenadas e inmutables
+tupla_frutas = ("manzana", "banana", "naranja")  # Tupla de frutas
+print("Tupla de frutas:", tupla_frutas)
+
+#consulta todos los elementos de la tupla
+for fruta in tupla_frutas:
+    print("Fruta:", fruta)  # Imprime cada fruta en la tupla
+
+
+# Acceder a elementos de la tupla
+print("Primera fruta de la tupla:", tupla_frutas[0])  # Accede al primer elemento
+# No se pueden modificar elementos de la tupla, pero se pueden acceder a ellos
+
+#diccionarios son colecciones desordenadas de pares clave-valor
+diccionario_frutas = {
+    "manzana": 1.5,
+    "banana": 0.8,
+    "naranja": 1.2
+}  # Diccionario de frutas con precios
+print("Diccionario de frutas:", diccionario_frutas)
+
+# Acceder a un valor por su clave
+print("Precio de la manzana:", diccionario_frutas["manzana"])  # Accede al valor de la clave "manzana"
+# Consulta todos los pares clave-valor del diccionario
+for fruta, precio in diccionario_frutas.items():
+    print("Fruta:", fruta, "Precio:", precio)  # Imprime cada par clave-valor en el diccionario
+
+
+# Añadir un nuevo par clave-valor al diccionario
+diccionario_frutas["kiwi"] = 2.0  # Añade "kiwi" con su precio
+print("Diccionario de frutas después de añadir kiwi:", diccionario_frutas)
+
+# Eliminar un par clave-valor del diccionario
+del diccionario_frutas["naranja"]  # Elimina "naranja" del diccionario
+print("Diccionario de frutas después de eliminar naranja:", diccionario_frutas)
+
+
+#solicitar datos al usuario
+nombre = input("Como te llamas?:  ")  # Solicita al usuario que ingrese su nombre
+print("Hola, " + nombre + "!")  # Saluda al usuario por su nombre
+edad = int(input("Cual es tu edad?: "))  # Solicita al usuario que ingrese su edad y la convierte a entero
+
+
 #operadores de decision 
 
 #condicionales if, elif, else
@@ -186,6 +266,8 @@ else:
 for i in range(5):  # Itera desde 0 hasta 4 
     print("Iteración:", i)
 
+
+
 #funciones
 #definicion de funciones con def
 
@@ -199,8 +281,11 @@ saludar("Andres") #llamada a la funcion
 #funcion con valor de retorno
 def sumar(a, b):
     return a + b  # Devuelve la suma de a y b
+
 resultado = sumar(3, 5)  # Llama a la función y almacena el resultado
 print("Resultado de la suma:", resultado)
+
+
 
 
 
